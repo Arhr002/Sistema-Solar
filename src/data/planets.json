@@ -1,0 +1,159 @@
+[
+  {
+    "id": "sol",
+    "name": "Sol",
+    "emoji": "☀",
+    "color": "#d8a307",
+    "image": "sol.png",
+    "description": "El Sol es el corazón del Sistema Solar y representa más del 99.8% de su masa total. Es una estrella de tipo espectral G2V. Su energía proviene de la fusión nuclear.",
+    "facts": [
+      { "label": "Diámetro", "value": "1.39 millones de km" },
+      { "label": "Temperatura superficial", "value": "5,500 °C" },
+      { "label": "Temperatura del núcleo", "value": "15 millones de °C" },
+      { "label": "Composición", "value": "74% hidrógeno, 24% helio, 2% otros elementos" },
+      { "label": "Edad", "value": "4,600 millones de años" }
+    ]
+  },
+  {
+    "id": "mercurio",
+    "name": "Mercurio",
+    "emoji": "🏜️",
+    "color": "#9d9580",
+    "image": "mercurio.png",
+    "description": "El planeta más pequeño y el más cercano al Sol. Extremadamente caliente de día y muy frío de noche.",
+    "facts": [
+      { "label": "Diámetro", "value": "4,879 km" },
+      { "label": "Temperatura", "value": "-180 °C a 430 °C" },
+      { "label": "Atmósfera", "value": "Muy delgada, oxígeno, sodio y potasio" },
+      { "label": "Órbita", "value": "88 días terrestres" },
+      { "label": "Rotación", "value": "176 días terrestres" }
+    ]
+  },
+  {
+    "id": "venus",
+    "name": "Venus",
+    "emoji": "🌋",
+    "color": "#dc7b41",
+    "image": "venus.png",
+    "description": "Venus es el planeta más caliente del Sistema Solar debido a su atmósfera densa de dióxido de carbono que atrapa el calor en un efecto invernadero extremo.",
+    "facts": [
+      { "label": "Diámetro", "value": "12,104 km" },
+      { "label": "Temperatura", "value": "462 °C en toda la superficie" },
+      { "label": "Atmósfera", "value": "CO₂ y nubes de ácido sulfúrico" },
+      { "label": "Presión atmosférica", "value": "92 veces la de la Tierra" },
+      { "label": "Órbita", "value": "225 días terrestres" },
+      { "label": "Rotación", "value": "243 días terrestres (gira en sentido contrario a la Tierra)" }
+    ]
+  },
+  {
+    "id": "tierra",
+    "name": "Tierra",
+    "emoji": "🌍",
+    "color": "#1e9bff",
+    "image": "tierra.jpg",
+    "description": "Nuestro hogar y el único planeta conocido con vida. Su atmósfera y distancia al Sol permiten la existencia de agua líquida y un clima estable.",
+    "facts": [
+      { "label": "Diámetro", "value": "12,742 km" },
+      { "label": "Temperatura promedio", "value": "15 °C" },
+      { "label": "Atmósfera", "value": "78% nitrógeno, 21% oxígeno, 1% otros gases" },
+      { "label": "Órbita", "value": "365.25 días" },
+      { "label": "Rotación", "value": "24 horas" },
+      { "label": "Luna", "value": "Un satélite natural: la Luna" }
+    ]
+  },
+  {
+    "id": "marte",
+    "name": "Marte",
+    "emoji": "🔴",
+    "color": "#d5484b",
+    "image": "marte.png",
+    "description": "Conocido como el Planeta Rojo por su alto contenido de óxido de hierro.",
+    "facts": [
+      { "label": "Diámetro", "value": "6,779 km" },
+      { "label": "Temperatura", "value": "-140 °C a 30 °C" },
+      { "label": "Atmósfera", "value": "CO₂ (95%), nitrógeno y argón" },
+      { "label": "Órbita", "value": "687 días terrestres" },
+      { "label": "Rotación", "value": "24.6 horas" },
+      { "label": "Lunas", "value": "Fobos y Deimos" }
+    ]
+  },
+  {
+    "id": "jupiter",
+    "name": "Júpiter",
+    "emoji": "🌀",
+    "color": "#ce7f4f",
+    "image": "jupiter.jpg",
+    "description": "El gigante gaseoso más grande del Sistema Solar.",
+    "facts": [
+      { "label": "Diámetro", "value": "139,820 km" },
+      { "label": "Temperatura", "value": "-145 °C" },
+      { "label": "Atmósfera", "value": "Hidrógeno y helio" },
+      { "label": "Órbita", "value": "12 años terrestres" },
+      { "label": "Rotación", "value": "9.9 horas" },
+      { "label": "Lunas", "value": "Más de 90, incluyendo Ganímedes" }
+    ]
+  },
+  {
+    "id": "saturno",
+    "name": "Saturno",
+    "emoji": "🪐",
+    "color": "#c0a75d",
+    "image": "saturno.png",
+    "description": "Famoso por su sistema de anillos compuesto de hielo y rocas.",
+    "facts": [
+      { "label": "Diámetro", "value": "116,460 km" },
+      { "label": "Temperatura", "value": "-178 °C" },
+      { "label": "Atmósfera", "value": "Hidrógeno, helio y metano" },
+      { "label": "Órbita", "value": "29.5 años terrestres" },
+      { "label": "Rotación", "value": "10.7 horas" },
+      { "label": "Lunas", "value": "Más de 80, incluyendo Titán" }
+    ]
+  },
+  {
+    "id": "urano",
+    "name": "Urano",
+    "emoji": "🔵",
+    "color": "#56c7c6",
+    "image": "urano.png",
+    "description": "El planeta más frío del Sistema Solar y el único que gira de lado.",
+    "facts": [
+      { "label": "Diámetro", "value": "50,724 km" },
+      { "label": "Temperatura", "value": "-224 °C" },
+      { "label": "Atmósfera", "value": "Hidrógeno, helio y metano" },
+      { "label": "Órbita", "value": "84 años terrestres" },
+      { "label": "Rotación", "value": "17.2 horas" },
+      { "label": "Lunas", "value": "27 conocidas" }
+    ]
+  },
+  {
+    "id": "neptuno",
+    "name": "Neptuno",
+    "emoji": "🌊",
+    "color": "#306c8f",
+    "image": "neptuno.jpg",
+    "description": "El último planeta del Sistema Solar, con vientos de hasta 2,000 km/h.",
+    "facts": [
+      { "label": "Diámetro", "value": "49,244 km" },
+      { "label": "Temperatura", "value": "-214 °C" },
+      { "label": "Atmósfera", "value": "Hidrógeno, helio y metano" },
+      { "label": "Órbita", "value": "165 años terrestres" },
+      { "label": "Rotación", "value": "16 horas" },
+      { "label": "Lunas", "value": "14, incluyendo Tritón" }
+    ]
+  },
+  {
+    "id": "pluton",
+    "name": "Plutón",
+    "emoji": "🧊",
+    "color": "#a48979",
+    "image": "pluton.png",
+    "description": "Planeta enano reclasificado en 2006.",
+    "facts": [
+      { "label": "Diámetro", "value": "2,377 km" },
+      { "label": "Temperatura", "value": "-229 °C" },
+      { "label": "Atmósfera", "value": "Nitrógeno, metano y monóxido de carbono" },
+      { "label": "Órbita", "value": "248 años terrestres" },
+      { "label": "Lunas", "value": "5, la mayor es Caronte" }
+    ]
+  }
+]

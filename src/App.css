@@ -1,0 +1,325 @@
+/* Importar fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Exo+2:wght@300;400;500;600&display=swap');
+
+/* Variables y estilos base */
+:root {
+    --min-viewport: 320;
+    --max-viewport: 1200;
+    --min-font-size: 16;
+    --max-font-size: 24;
+    --font-titles: 'Orbitron', sans-serif;
+    --font-text: 'Exo 2', sans-serif;
+    --planet-size-desktop: 250px;
+    --planet-size-tablet: 200px;
+    --planet-size-mobile: 150px;
+    --i: #fff;
+    --imagen-fondo: url(img/earth.jpg);
+    --sombra: 0 0 35px #fff;
+    --clr: #fff;
+    --color: #fff;
+}
+
+body {
+    background: url(/img/stars.jpg); /* Modificado para apuntar a /public/img */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-text);
+}
+
+.container {
+    width: min(100% - 1rem, 1200px);
+    margin: 0 auto;
+    padding: clamp(0.5rem, 2vw, 2rem);
+}
+
+/* En React, el <header> es ahora un <div> con clase 'planet-list' dentro de 'home' */
+.home .planet-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: clamp(1rem, 3vw, 3rem);
+    padding: clamp(0.5rem, 2vw, 2rem);
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: clamp(0.5rem, 2vw, 2rem) 0;
+    flex-direction: column;
+    position: relative;
+    min-height: clamp(200px, 35vw, 350px);
+}
+
+h4 {
+    color: var(--i);
+    font-size: clamp(1.25rem, 4vw, 1.8rem);
+    z-index: 2;
+    margin: 0 0 clamp(0.5rem, 2vw, 1.5rem) 0;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0,0,0,0.8);
+    font-family: var(--font-titles);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.bola {
+    width: clamp(120px, 30vw, 250px);
+    height: clamp(120px, 30vw, 250px);
+    background-image: var(--imagen-fondo);
+    background-size: cover;
+    background-repeat: repeat-x;
+    border-radius: 50%;
+    box-shadow: var(--sombra);
+    animation: animateEarth 20s linear infinite;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Anillos de Saturno */
+.saturno-anillos {
+    position: relative;
+}
+
+.saturno-anillos::before,
+.saturno-anillos::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 40px;
+    background: linear-gradient(to right,
+        rgba(192,167,93,0.1),
+        rgba(192,167,93,0.4) 20%,
+        rgba(192,167,93,0.7) 40%,
+        rgba(192,167,93,0.4) 60%,
+        rgba(192,167,93,0.1) 80%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.8),
+                0 0 15px rgba(192,167,93,0.3);
+    z-index: -1;
+}
+
+.saturno-anillos::before {
+    width: 180%;
+    height: 25px;
+    background: linear-gradient(to right,
+        rgba(255,223,186,0.1),
+        rgba(255,223,186,0.3) 20%,
+        rgba(255,223,186,0.5) 40%,
+        rgba(255,223,186,0.3) 60%,
+        rgba(255,223,186,0.1) 80%);
+    transform: translate(-50%, -50%) rotate(-12deg);
+}
+
+@keyframes rotateRings {
+    from {
+        transform: translate(-50%, -50%) rotate(-10deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(350deg);
+    }
+}
+
+.informacion {
+    margin-top: clamp(1rem, 3vw, 2rem);
+    border: 1px solid #fff;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: clamp(0.75rem, 2vw, 1.1rem);
+    letter-spacing: 0.1em;
+    padding: clamp(0.5rem, 1.5vw, 1rem) clamp(1rem, 3vw, 2rem);
+    transition: .5s;
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    font-family: var(--font-titles);
+    font-weight: 500;
+}
+
+.informacion:hover {
+    letter-spacing: .25em;
+    background: var(--clr);
+    color: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+}
+
+.informacion::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #27282c;
+}
+
+.informacion span {
+    position: relative;
+    z-index: 1;
+}
+
+.informacion i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.informacion i::before {
+    content: '';
+    position: absolute;
+    bottom: -3.5px;
+    left: 20%;
+    width: 10px;
+    height: 5px;
+    border: 2px solid var(--clr);
+    background: #27282c;
+    transform: translateX(-50%);
+    transition: .5s;
+}
+
+.informacion:hover i::before {
+    width: 10px;
+    left: 80%;
+}
+
+.informacion i::after {
+    content: '';
+    position: absolute;
+    top: -3.5px;
+    left: 80%;
+    width: 10px;
+    height: 5px;
+    border: 2px solid var(--clr);
+    background: #27282c;
+    transition: .5s;
+}
+
+.informacion:hover i::after {
+    width: 10px;
+    left: 20%;
+}
+
+.noticia {
+    max-width: min(100% - 2rem, 800px);
+    margin: clamp(1rem, 4vw, 4rem) auto;
+    padding: clamp(1rem, 3vw, 2rem);
+    position: relative;
+    width: min(100% - 2rem, 800px);
+    margin: 0 auto;
+    padding: clamp(1rem, 3vw, 2rem);
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: clamp(0.5rem, 1vw, 1rem);
+}
+
+.noticia .bola {
+    width: clamp(150px, 35vw, 300px);
+    height: clamp(150px, 35vw, 300px);
+    margin: clamp(1rem, 4vw, 2rem) auto;
+    position: relative;
+    left: auto;
+    top: auto;
+}
+
+.noticia h1 {
+    color: #fff;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    text-align: center;
+    margin: clamp(1rem, 3vw, 2rem) 0;
+    font-family: var(--font-titles);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+
+.noticia p {
+    color: #fff;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    line-height: 1.8;
+    text-align: left;
+    margin: clamp(1rem, 3vw, 2rem) 0;
+    padding: clamp(0.5rem, 2vw, 1rem);
+    letter-spacing: 0.02em;
+    font-family: var(--font-text);
+    font-weight: 300;
+}
+
+.noticia ul {
+    list-style: none;
+    padding: 0;
+    margin: clamp(1rem, 3vw, 2rem) 0;
+    color: #fff;
+}
+
+.noticia ul li {
+    font-size: clamp(0.85rem, 2.3vw, 1rem);
+    line-height: 1.6;
+    margin-bottom: clamp(0.5rem, 1.5vw, 1rem);
+    padding: clamp(0.5rem, 1.5vw, 1rem);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.noticia ul li:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(10px);
+}
+
+.noticia ul li strong {
+    color: var(--color);
+    font-family: var(--font-titles);
+    font-weight: 500;
+    margin-right: 0.5em;
+    text-shadow: 0 0 5px rgba(255,255,255,0.3);
+}
+
+.volver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    margin-top: clamp(2rem, 5vw, 4rem);
+    background: rgba(0,0,0,.7);
+    padding: clamp(0.5rem, 1.5vw, 1rem) clamp(1.5rem, 3vw, 2rem);
+    transition: all .2s;
+    color: #fff;
+    margin: clamp(1rem, 3vw, 2rem) auto;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    min-width: clamp(80px, 15vw, 120px);
+    border-radius: 5px;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    font-family: var(--font-titles);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+.volver:hover {
+    box-shadow: var(--i);
+    background: rgba(0,0,0,.9);
+    color: var(--color);
+    transform: scale(1.05);
+}
+
+@keyframes animateEarth {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 200%;
+    }
+}
+
+/* Añadido para que el link no tenga estilos por defecto */
+.planet-link {
+    text-decoration: none;
+}
