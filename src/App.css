@@ -13,14 +13,14 @@
     --planet-size-tablet: 200px;
     --planet-size-mobile: 150px;
     --i: #fff;
-    --imagen-fondo: url(img/earth.jpg);
+    --imagen-fondo: url(img/earth.webp);
     --sombra: 0 0 35px #fff;
     --clr: #fff;
     --color: #fff;
 }
 
 body {
-    background: url(/img/stars.jpg); /* Modificado para apuntar a /public/img */
+    background: url(/img/stars.webp); /* Modificado para apuntar a /public/img */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -150,7 +150,7 @@ h4 {
 .informacion:hover {
     letter-spacing: .25em;
     background: var(--clr);
-    color: var(--clr);
+    color: #fff;
     box-shadow: 0 0 35px var(--clr);
 }
 
@@ -164,6 +164,7 @@ h4 {
 .informacion span {
     position: relative;
     z-index: 1;
+    color: var(--clr);
 }
 
 .informacion i {

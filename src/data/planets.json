@@ -4,7 +4,7 @@
     "name": "Sol",
     "emoji": "☀",
     "color": "#d8a307",
-    "image": "sol.png",
+    "image": "sol.webp",
     "description": "El Sol es el corazón del Sistema Solar y representa más del 99.8% de su masa total. Es una estrella de tipo espectral G2V. Su energía proviene de la fusión nuclear.",
     "facts": [
       { "label": "Diámetro", "value": "1.39 millones de km" },
@@ -19,7 +19,7 @@
     "name": "Mercurio",
     "emoji": "🏜️",
     "color": "#9d9580",
-    "image": "mercurio.png",
+    "image": "mercurio.webp",
     "description": "El planeta más pequeño y el más cercano al Sol. Extremadamente caliente de día y muy frío de noche.",
     "facts": [
       { "label": "Diámetro", "value": "4,879 km" },
@@ -34,7 +34,7 @@
     "name": "Venus",
     "emoji": "🌋",
     "color": "#dc7b41",
-    "image": "venus.png",
+    "image": "venus.webp",
     "description": "Venus es el planeta más caliente del Sistema Solar debido a su atmósfera densa de dióxido de carbono que atrapa el calor en un efecto invernadero extremo.",
     "facts": [
       { "label": "Diámetro", "value": "12,104 km" },
@@ -50,7 +50,7 @@
     "name": "Tierra",
     "emoji": "🌍",
     "color": "#1e9bff",
-    "image": "tierra.jpg",
+    "image": "tierra.webp",
     "description": "Nuestro hogar y el único planeta conocido con vida. Su atmósfera y distancia al Sol permiten la existencia de agua líquida y un clima estable.",
     "facts": [
       { "label": "Diámetro", "value": "12,742 km" },
@@ -66,7 +66,7 @@
     "name": "Marte",
     "emoji": "🔴",
     "color": "#d5484b",
-    "image": "marte.png",
+    "image": "marte.webp",
     "description": "Conocido como el Planeta Rojo por su alto contenido de óxido de hierro.",
     "facts": [
       { "label": "Diámetro", "value": "6,779 km" },
@@ -82,7 +82,7 @@
     "name": "Júpiter",
     "emoji": "🌀",
     "color": "#ce7f4f",
-    "image": "jupiter.jpg",
+    "image": "jupiter.webp",
     "description": "El gigante gaseoso más grande del Sistema Solar.",
     "facts": [
       { "label": "Diámetro", "value": "139,820 km" },
@@ -98,7 +98,7 @@
     "name": "Saturno",
     "emoji": "🪐",
     "color": "#c0a75d",
-    "image": "saturno.png",
+    "image": "saturno.webp",
     "description": "Famoso por su sistema de anillos compuesto de hielo y rocas.",
     "facts": [
       { "label": "Diámetro", "value": "116,460 km" },
@@ -114,7 +114,7 @@
     "name": "Urano",
     "emoji": "🔵",
     "color": "#56c7c6",
-    "image": "urano.png",
+    "image": "urano.webp",
     "description": "El planeta más frío del Sistema Solar y el único que gira de lado.",
     "facts": [
       { "label": "Diámetro", "value": "50,724 km" },
@@ -130,7 +130,7 @@
     "name": "Neptuno",
     "emoji": "🌊",
     "color": "#306c8f",
-    "image": "neptuno.jpg",
+    "image": "neptuno.webp",
     "description": "El último planeta del Sistema Solar, con vientos de hasta 2,000 km/h.",
     "facts": [
       { "label": "Diámetro", "value": "49,244 km" },
@@ -146,7 +146,7 @@
     "name": "Plutón",
     "emoji": "🧊",
     "color": "#a48979",
-    "image": "pluton.png",
+    "image": "pluton.webp",
     "description": "Planeta enano reclasificado en 2006.",
     "facts": [
       { "label": "Diámetro", "value": "2,377 km" },

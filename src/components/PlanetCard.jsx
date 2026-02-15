@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 function PlanetCard({ planet }) {
     const cardStyle = {
         '--i': planet.color,
@@ -14,9 +15,12 @@ function PlanetCard({ planet }) {
                 className={`bola ${planet.id === 'saturno' ? 'saturno-anillos' : ''}`} 
                 style={ballStyle}
             ></div>
-            <div className="informacion">
-                <span>Información</span><i></i>
-            </div>
+            <Link 
+                to={`/planets/${planet.id}`} 
+                className="informacion"
+                style={{'--clr': planet.color, textDecoration: 'none'}}>
+                    <span>Información</span><i></i>
+            </Link>
         </article>
     )
 }

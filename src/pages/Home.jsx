@@ -7,9 +7,7 @@ function Home() {
         <div className="home">
             <div className="planet-list">
                 {planets.map(planet => (
-                    <Link to={`/planets/${planet.id}`} key={planet.id} className="planet-link">
-                        <PlanetCard planet={planet} />
-                    </Link>
+                    <PlanetCard key={planet.id} planet={planet} />
                 ))}
             </div>
         </div>
